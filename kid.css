@@ -1,0 +1,91 @@
+/* shared style */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+}
+.btn-primary{
+  width: 180px;
+  height: 42px;
+  border-radius: 12px;
+  border: none;
+  color:white;
+  font-size: 1.2rem;
+  font-weight:400;
+}
+/* nav styles */
+nav{
+display: flex;
+justify-content:space-between;
+margin:0 140px;
+display: flex;
+align-items: center;
+}
+.school{
+  display: flex;
+  align-items: center;
+  gap:10px;
+
+}
+.school-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap:28px;
+  font-size: 1.2rem;
+
+}
+nav ul a{
+    text-decoration: none;
+}
+.home{
+  color: orange;
+}
+.about{
+  color: skyblue;
+}
+.facilities{
+  color: #05D4DF;
+}
+.admission{
+  color: #5D58EF;
+}
+.btn-nav{
+  background-color: orange;
+}
+/* hero styles */
+.hero-container{
+  display: flex;
+  margin:0px 140px;
+  justify-content: space-between;
+}
+.hero-text{
+  width: 640px;
+  height: 331px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+.hero-text-title{
+  font-weight: 700;
+  font-size:3.5rem;
+  margin-bottom: 0;
+
+}
+.hero-description{
+  font-size: 1.5rem;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.btn-hero{
+  background-color:black;
+  margin-top: 0;
+}
+.hero-img{
+  width: 460px;
+  height: 575px;
+}
