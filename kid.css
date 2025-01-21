@@ -113,7 +113,6 @@ nav ul a{
 /* standard curriculum styles */
 .bg-img{
   gap:20px;
-  background-image:url("assets/bg.png");
   background-repeat: no-repeat;
 }
 .standard-title{
