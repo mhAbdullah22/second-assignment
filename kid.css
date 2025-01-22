@@ -1,8 +1,14 @@
 /* shared style */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .quicksand-font {
   font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+}
+.raleway-font {
+  font-family: "Raleway", serif;
   font-optical-sizing: auto;
 }
 .btn-primary{
@@ -186,6 +192,109 @@ nav ul a{
   border: none;
   background-color:white;
 }
+/* arrow styles */
+.arrow-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.arrow{
+ height: 24px;
+ background-color: orange;
+ padding: 20px;
+ border-radius: 50%;
+ margin: 10px;
+}
+/* our stories styles */
+.stories-title{
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin:40px 0 50px 0;
+}
+.stories-container{
+  display: grid;
+  margin:0px 140px 0px 140px;
+  grid-template-columns: repeat(3,1fr);
+  gap:16px;
+ 
+}
+.stories-item1{
+  width:580px;
+  height: 617px;
+  border-radius: 16px;
+  border: 1px solid skyblue;
+  grid-row: span 4;
+  background-color: white;
+
+  
+}
+.top-btn{
+  margin-top:-20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.top{
+  width:180px;
+  font-size: .98rem;
+  border:none;
+  color: white;
+  border-radius: 40px;
+  padding:10px 10px 10px 10px;
+  background-color: #05D4DF;
+}
+.stories-item-title1{
+  font-weight: bold;
+  font-size:1.5rem ;
+  margin:40px 40px 40px 30px;
+}
+.stories-item-title{
+  font-weight:bold;
+  font-size:1rem ;
+  margin:0 40px 0px 30px;
+}
+.stories-item-description{
+  font-size: 1rem;
+  font-weight: 500px;
+  margin:0 40px 20px 30px;
+}
+.stories-item-img1{
+  width:100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.stories-item{
+  width:290px;
+  height: 300px;
+  border: 1px solid seagreen;
+  border-radius: 16px;
+  margin:0;
+  width: 100%;
+  background-color: white;
+}
+
+.stories-item-img{
+  width:100%;
+  height: 177px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.stories-bg{
+  background-image: linear-gradient(180deg,rgba(254,163,1,0.3),rgba(254,163,1,0.3)),url("assets/bg.png");
+  padding-bottom: 30px;
+  padding-top: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-view{
+  background-color: black;
+}
+.view-btn-container{
+  margin:40px 650px ;
+}
+
+
 /* footer styles */
 .end-container{
   display: flex;
@@ -216,6 +325,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-left:-80px;
 }
 .about-title{
   font-size: 1.5rem;
@@ -228,7 +338,7 @@ list-style: none;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap:20px;
+gap:22px;
 }
 .about-school ul a{
   text-decoration: none;
@@ -243,6 +353,7 @@ margin-top: 12px;
 .media{
   margin-left: 3px;
 }
+
 
 /* responsive styles */
 @media screen and (max-width:576px) {
