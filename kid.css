@@ -142,7 +142,7 @@ nav ul a{
   flex-direction: column;
   align-items: center;
   padding:40px 30px;
-  gap:20px;
+  gap:15px;
   background-image: linear-gradient(180deg,#DEF5FF,white,white,white);
 
 }
@@ -177,20 +177,18 @@ nav ul a{
 .standard-item-btn1{
   font-size: 1rem;
   color:#64C8FF;
-  border: none;
-  background-color:white;
+  text-decoration: none;
+  
 }
 .standard-item-btn2{
   font-size: 1rem;
   color:#F0AA00;
-  border: none;
-  background-color:white;
+  text-decoration: none;
 }
 .standard-item-btn3{
   font-size: 1rem;
   color:#8700FF;
-  border: none;
-  background-color:white;
+  text-decoration: none;
 }
 /* arrow styles */
 .arrow-container{
@@ -198,6 +196,10 @@ nav ul a{
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+.arrow:hover{
+  background-color: gray;
+  cursor:pointer;
 }
 .arrow{
  height: 24px;
@@ -224,7 +226,6 @@ nav ul a{
   width:580px;
   height: 617px;
   border-radius: 16px;
-  border: 1px solid skyblue;
   grid-row: span 4;
   background-color: white;
 
@@ -267,7 +268,6 @@ nav ul a{
 .stories-item{
   width:290px;
   height: 300px;
-  border: 1px solid seagreen;
   border-radius: 16px;
   margin:0;
   width: 100%;
@@ -354,28 +354,32 @@ margin-top: 12px;
   margin-left: 3px;
 }
 
-
 /* responsive styles */
-@media screen and (max-width:576px) {
+@media screen and (max-width:586px) {
   li,.btn-nav,.school-title{
     display:none;
   }
+  .mark{
+    display: none;
+  }
   .hr-line{
     display: block;
-    margin-right: -250px;
+    margin-right: -550px;
     margin-top: 30px;
   }
+ 
 .hero-container{
   display: flex;
  flex-direction: column-reverse;
  justify-content:space-between;
  margin-left: 0px;
  padding: 20px;
+ gap:50px;
 
 }
 .hamburger-menu{
   display: block;
-  margin-left: 450px;
+  margin-left: 750px;
   margin-top: 6px;
 }
 .school{
@@ -384,6 +388,7 @@ margin-top: 12px;
 }
 .hero-text{
   text-align: center;
+  margin-left: 150px;
   
 }
 .hero-text-title{
@@ -393,38 +398,83 @@ margin-top: 12px;
   margin-right: 15px;
 }
 .hero-img{
-margin-left:20px;
-width: 570px;
-height:613px;
+margin-left:60px;
+width: 800px;
+height:700px;
 
 }
 .standard-container{
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap:10px;
- 
-  
 }
 .standard-title{
   text-align: center;
   margin:100px auto;
-  width: 100%;
   text-wrap: nowrap;
-  margin-left: 90px;
-  margin-bottom: -20px;
+  margin-left: 250px;
 }
 .standard-item1{
-  margin-left: -120px;
-  margin-right: -85px;
+  margin-left:-100px;
+  width:820px;
 }
 .standard-item2{
-  margin-left: -120px;
-  margin-right: -85px;
+  margin-left:-100px;
+  width:820px;
 }
 .standard-item3{
-  margin-left: -120px;
-  margin-right: -85px;
+  margin-left:-100px;
+  width:820px;
 }
- 
+.arrow-container{
+  display: none;
+}
+.stories-title{
+  margin-left: 100px;
+  text-wrap: nowrap;
+}
+.stories-item1{
+  display: none;
+}
+.stories-item{
+  width: 445px;
+  height:500px;
+}
+.stories-container{
+  display:grid;
+  margin-left: 20px;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+
+}
+.stories-bg{
+   background-image:linear-gradient(180deg,white,rgba(254,163,1,0.3)), url("assets/bg.png");
+   width: 950px;
+   background-position:center;
+   background-repeat: repeat;
+}
+.view-btn-container{
+  margin-left: 400px;
+}
+.end-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  align-items: start;
+  gap:10px;
+  padding: 30px;
+  width: 900px;
+}
+.education-description{
+  width: 600px;
+}
+.about-school{
+  margin-left: -100px;
+}
+.about-school ul li{
+  display: block;
+}
+.social{
+margin-bottom: 40px;
+}
 }
